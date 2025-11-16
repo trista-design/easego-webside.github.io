@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easego | 旅宿代運營專家 - 專業代管服務</title>
+    <meta name="autor" content="easego" />
+    <meta name="theme-color" content="#e8e8e8" />
+    <!-- Bootstrap - CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar container-fluid">
+      <div class="nav-area container-lg">
+        <a
+          class="nav-area__logo"
+          href="javascript:void(0);"
+          onclick="scrollToTop()"
+        >
+          <img id="logoImage" src="/img/Logo_easego.png" alt="easego-logo" />
+        </a>
+        <div class="nav-area__menu">
+          <ul>
+            <li>
+              <a href="#" class="scroll-link" data-target="service">服務項目</a>
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="price">價格方案</a>
+            </li>
+            <li>
+              <a href="#" class="scroll-link" data-target="contact_form"
+                >聯絡我們</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-banner">
+        <div class="slide slide-1 active">
+          <h2 class="slogan">輕鬆入住，隨心旅行</h2>
+        </div>
+        <div class="slide slide-2">
+          <h2 class="slogan">你的旅宿，我來守護</h2>
+        </div>
+        <div class="slide slide-3">
+          <h2 class="slogan">一站式代運營服務</h2>
+        </div>
+      </section>
+      <section class="hero-area service" id="service">
+        <h3 class="title d-flex">服務項目</h3>
+        <div class="service_card-area area-1">
+          <div class="service_card card-1">
+            <img src="/img/service1.png" alt="service1" />
+            <h6>多平台訂單集中管理</h6>
+            <p>支援國內外OTA平台與旅行社</p>
+          </div>
+          <div class="service_card card-2">
+            <img src="/img/service2.png" alt="service2" />
+            <h6>專業訂單代管與客戶關懷</h6>
+            <p>24小時全方位客服支援</p>
+          </div>
+          <div class="service_card card-3">
+            <img src="/img/service3.png" alt="service3" />
+            <h6>專屬官網代管與SEO優化</h6>
+            <p>提升搜尋排名及網站流量</p>
+          </div>
+        </div>
+        <div class="service_card-area area-2">
+          <div class="service_card card-1">
+            <img src="/img/service4.png" alt="service4" />
+            <h6>品牌社群行銷與廣告投放</h6>
+            <p>多渠道推廣，精準觸及潛在客群</p>
+          </div>
+          <div class="service_card card-2">
+            <img src="/img/service5.png" alt="service5" />
+            <h6>營收報表與市場策略支持</h6>
+            <p>數據化分析，制定最佳經營決策</p>
+          </div>
+          <div class="service_card card-3">
+            <img src="/img/service6.png" alt="service6" />
+            <h6>網紅聯合行銷</h6>
+            <p>建立合作網絡，共創銷售動能</p>
+          </div>
+        </div>
+      </section>
+      <section class="hero-area price" id="price">
+        <h3 class="title d-flex">價格方案</h3>
+        <div class="price_card-area">
+          <div class="price_card card-1">
+            <div class="card-hero">
+              <div class="card_title">
+                <h6>基礎方案</h6>
+                <h5>25%</h5>
+                <p>按月淨收益抽成</p>
+              </div>
+              <button class="service-button btn d-flex" type="button">
+                <p class="btn-txt">了解更多</p>
+              </button>
+            </div>
+            <div class="card_txt-area">
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>專業行銷推廣</p>
+              </div>
+              <div class="card_txt card_txt-2 d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>線上訂單管理</p>
+              </div>
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>客服諮詢服務</p>
+              </div>
+            </div>
+          </div>
+          <div class="price_card card-2">
+            <div class="card_flag">
+              <p>最熱門</p>
+            </div>
+            <div class="card-hero">
+              <div class="card_title">
+                <h6>全方位方案</h6>
+                <h5>30%</h5>
+                <p>按月淨收益抽成</p>
+              </div>
+              <button class="service-button btn d-flex" type="button">
+                <p class="btn-txt">立即諮詢</p>
+              </button>
+            </div>
+            <div class="card_txt-area">
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>基礎方案所有服務</p>
+              </div>
+              <div class="card_txt card_txt-2 d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>房源維護與清潔</p>
+              </div>
+              <div class="card_txt card_txt-2 d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>動態收益管理</p>
+              </div>
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>設備更新建議</p>
+              </div>
+            </div>
+          </div>
+          <div class="price_card card-3">
+            <div class="card-hero">
+              <div class="card_title">
+                <h6>客製化方案</h6>
+                <h5>聯繫報價</h5>
+                <p>依據您的需求量身打造</p>
+              </div>
+              <button class="service-button btn d-flex" type="button">
+                <p class="btn-txt">了解更多</p>
+              </button>
+            </div>
+            <div class="card_txt-area">
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>依指定服務組合</p>
+              </div>
+              <div class="card_txt card_txt-2 d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>單項服務承包</p>
+              </div>
+              <div class="card_txt card_txt-2 d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>專業顧問服務</p>
+              </div>
+              <div class="card_txt d-flex">
+                <i class="fa-solid fa-circle-check text-green-500"></i>
+                <p>彈性合約期間</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero-area contact_form" id="contact_form">
+        <h3 class="title d-flex">聯絡我們</h3>
+        <div class="form_area">
+          <div class="contect_pic"></div>
+          <form action="javascript:GoForm();">
+            <div class="quz quz_name">
+              <div class="quz_title">
+                <label for="name">姓名</label>
+                <span class="vnumgf" id="i5" aria-label="將這個問題設為必填">
+                  *</span
+                >
+              </div>
+              <input class="quz_input" type="text" name="name" /><br />
+            </div>
+            <div class="quz quz_email">
+              <div class="quz_title">
+                <label for="name">電子信箱</label><br />
+                <span class="vnumgf" id="i5" aria-label="將這個問題設為必填">
+                  *</span
+                >
+              </div>
+              <input class="quz_input" type="email" name="email" /><br />
+            </div>
+            <div class="quz quz_tel">
+              <div class="quz_title">
+                <label for="name">聯絡電話</label><br />
+                <span class="vnumgf" id="i5" aria-label="將這個問題設為必填">
+                  *</span
+                >
+              </div>
+              <input class="quz_input" type="text" name="tel" /><br />
+            </div>
+            <div class="quz quz_content">
+              <div class="quz_title">
+                <label for="name">諮詢內容</label><br />
+                <span class="vnumgf" id="i5" aria-label="將這個問題設為必填">
+                  *</span
+                >
+              </div>
+              <textarea
+                class="quz_input"
+                type="text"
+                name="content"
+                rows="5"
+                cols="20"
+              ></textarea>
+            </div>
+            <div class="private_rule">
+              <p>
+                繼續操作即表示本人同意並確認已閱讀
+                <a href="#">easego 的隱私政策</a>。
+              </p>
+              <p>
+                我亦同意 easego
+                或其代表可透過我提供的電子郵件、電話、或簡訊與我聯絡（包含透過自動方式），而上述聯絡方式可包含銷售用途。
+              </p>
+            </div>
+            <input class="form_submit" type="submit" value="送出" />
+          </form>
+        </div>
+      </section>
+
+      <!-- javascript - google表單 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        function GoForm() {
+          var field1 = $("[name='name']").val();
+          var field2 = $("[name='email']").val();
+          var field3 = $("[name='tel']").val();
+          var field4 = $("[name='content']").val();
+
+          // ✅ 驗證：有空白就不送
+          if (!field1 || !field2 || !field3 || !field4) {
+            alert("請幫我們填寫把所有欄位在送出唷 :) ");
+            return;
+          }
+
+          $.ajax({
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSfmamqTiqsD0jbjMQOuPqf8UJE9A0HfvLTO7dfIVBj9g5X8bQ/formResponse",
+            data: {
+              "entry.2059341369": field1,
+              "entry.837471834": field2,
+              "entry.1742112997": field3,
+              "entry.347622013": field4,
+            },
+            type: "POST",
+            dataType: "xml",
+            success: function () {
+              alert("我們已收到您的訊息! 小幫手會盡快回覆您的:)");
+              $("form")[0].reset(); // ✅ 全部清空
+            },
+            error: function () {
+              //⚠️ 會一直走 error，但資料其實有送成功
+              alert("我們已收到您的訊息! 小幫手會盡快回覆您的:)");
+              $("form")[0].reset(); // ✅ 全部清空
+            },
+          });
+        }
+      </script>
+    </main>
+
+    <footer>
+      <div class="about_area">
+        <p class="about_us">
+          宿來易 easego
+          是一群熱愛旅遊與住宿產業的專業團隊。深知旅宿業主在經營上的痛點，從瑣碎的訂單管理、複雜的行銷推廣，到耗時的清潔維護，我們致力於提供一站式的代運營解決方案，讓您能輕鬆享受被動收入，將寶貴的時間留給更重要的事。
+        </p>
+        <p>如果您有任何合作意向，歡迎隨時與我們聯絡。</p>
+        <div class="contact_info">
+          <div class="contact_area mail">
+            <i class="fa-solid fa-envelope"></i
+            ><a href="mailto:easego.hosting@gmail.com"
+              >easego.hosting@gmail.com</a
+            >
+          </div>
+          <div class="contact_area tel">
+            <i class="fa-solid fa-phone"></i>
+            <p id="callButton">0910-927-877</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_contect">
+        <p>© 2025 宿來易 easego ‧ 版權所有</p>
+        <div class="private_area">
+          <a href="#">隱私政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/index.js"></script>
+  </body>
+</html>
