@@ -44,13 +44,23 @@
   </head>
   <body>
     <header class="navbar container-fluid">
-      <div class="nav-area container-lg">
+      <div class="nav-area container-lg" id="Top-section">
         <a
+          id="Logo"
           class="nav-area__logo"
           href="javascript:void(0);"
           onclick="scrollToTop()"
         >
-          <img id="logoImage" src="./img/Logo_easego.png" alt="easego-logo" />
+          <img
+            class="logodesktop"
+            src="./img/Logo_easego.png"
+            alt="easego-logo"
+          />
+          <img
+            class="logomobile"
+            src="./img/Logo_Image-EN.png"
+            alt="easego-logo"
+          />
         </a>
         <div class="nav-area__menu">
           <ul>
@@ -73,12 +83,15 @@
       <section class="hero-banner">
         <div class="slide slide-1 active">
           <h2 class="slogan">輕鬆入住，隨心旅行</h2>
+          <img src="./img/slide-1.jpg" alt="banner-1" />
         </div>
         <div class="slide slide-2">
           <h2 class="slogan">你的旅宿，我來守護</h2>
+          <img src="./img/slide-2.jpg" alt="banner-2" />
         </div>
         <div class="slide slide-3">
           <h2 class="slogan">一站式代運營服務</h2>
+          <img src="./img/slide-3.jpg" alt="banner-3" />
         </div>
       </section>
       <section class="hero-area service" id="service">

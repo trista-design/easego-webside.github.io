@@ -32,6 +32,10 @@
 .navbar .nav-area .nav-area__logo:active {
   transform: scale(0.8);
 }
+.navbar .nav-area .nav-area__logo .logomobile {
+  opacity: 0;
+  display: none;
+}
 .navbar .nav-area .nav-area__menu ul {
   display: flex;
   justify-content: end;
@@ -55,43 +59,52 @@
 .hero-banner {
   height: 488px;
   position: relative;
+  overflow: hidden; /* 確保圖片溢出部分被裁切 */
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  background-position: 50% 50%;
 }
 .hero-banner .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  display: none;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.8s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: 50% 50%;
 }
-.hero-banner .slide.active {
+.hero-banner .slide .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: #f5fcfc;
+  font-weight: 400;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.hero-banner .active {
+  display: flex;
+  opacity: 1;
+}
+.hero-banner .active img {
+  width: 100%;
+  height: 488px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero-banner.active {
   opacity: 1;
   pointer-events: auto;
   z-index: 1;
 }
-.hero-banner .slide .slogan {
+.hero-banner .slogan {
   position: absolute;
   top: 50%;
   font-size: 28px;
   color: #f5fcfc;
   font-weight: 400;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-}
-.hero-banner .slide-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/slide-1.jpg);
-}
-.hero-banner .slide-2 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(/img/slide-2.jpg);
-}
-.hero-banner .slide-3 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/slide-3.jpg);
 }
 
 .hero-area {
@@ -484,10 +497,21 @@ footer .footer_contect .private_area a:hover {
     border-radius: 50px;
     opacity: 0.9;
   }
+  .navbar .nav-area .nav-area__logo .logomobile {
+    opacity: 1;
+    display: flex;
+  }
+  .navbar .nav-area .nav-area__logo .logodesktop {
+    opacity: 0;
+    display: none;
+  }
   .navbar .nav-area .nav-area__logo img {
     width: 120px;
   }
   .hero-banner {
+    height: 380px;
+  }
+  .hero-banner .active {
     height: 380px;
   }
   .service {
@@ -535,6 +559,10 @@ footer .footer_contect .private_area a:hover {
     height: -moz-fit-content;
     height: fit-content;
     width: 360px;
+  }
+  .price .price_card-area .price_card:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   footer .about_area .about_us {
     width: 630px;
@@ -585,9 +613,12 @@ footer .footer_contect .private_area a:hover {
 @media (max-width: 576px) {
   .navbar {
     width: 480px;
-    left: 48%;
+    left: 50%;
   }
   .hero-banner {
+    height: 320px;
+  }
+  .hero-banner .active {
     height: 320px;
   }
   .service .area-1 {
@@ -617,7 +648,7 @@ footer .footer_contect .private_area a:hover {
     width: 340px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .navbar {
     width: 360px;
     left: 50%;
@@ -641,6 +672,38 @@ footer .footer_contect .private_area a:hover {
   }
   footer .about_area .about_us {
     width: 320px;
+  }
+  footer .about_area .contact_info {
+    flex-direction: column;
+  }
+  footer .about_area .contact_info .mail {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar {
+    width: 280px;
+    left: 50%;
+  }
+  .navbar .nav-area .nav-area__logo {
+    display: none;
+  }
+  .navbar .nav-area .nav-area__menu {
+    position: absolute;
+    right: 16px;
+  }
+  .navbar .nav-area .nav-area__menu ul {
+    padding: 0;
+  }
+  .navbar .nav-area .nav-area__menu ul li {
+    margin-right: 14px;
+  }
+  footer .about_area .about_us {
+    width: 240px;
+  }
+  footer .about_area p {
+    width: 180px;
+    text-align: center;
   }
   footer .about_area .contact_info {
     flex-direction: column;
