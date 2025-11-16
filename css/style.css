@@ -85,13 +85,13 @@
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 .hero-banner .slide-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/img/slide-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/slide-1.jpg);
 }
 .hero-banner .slide-2 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/img/slide-2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(/img/slide-2.jpg);
 }
 .hero-banner .slide-3 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("/img/slide-3.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/slide-3.jpg);
 }
 
 .hero-area {

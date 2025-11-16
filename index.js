@@ -40,8 +40,8 @@ setInterval(() => {
 const logoImage = document.getElementById("logoImage");
 
 // 定義不同螢幕尺寸的圖片路徑
-const desktopSrc = "/img/Logo_easego.png";
-const mobileSrc = "/img/Logo_Image-EN.png"; // 假設這是您的小螢幕圖片
+const desktopSrc = "./img/Logo_easego.png";
+const mobileSrc = "./img/Logo_Image-EN.png"; // 假設這是您的小螢幕圖片
 
 // 定義 Media Query 條件 (與您的 CSS 保持一致)
 const mediaQuery = window.matchMedia("(max-width: 992px)");

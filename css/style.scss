@@ -99,21 +99,21 @@ $color-primary: #005f7e; // 假設藍色
 
   .slide-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url("/img/slide-1.jpg");
+      url(/img/slide-1.jpg);
   }
   .slide-2 {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
       ),
-      url("/img/slide-2.jpg");
+      url(/img/slide-2.jpg);
   }
   .slide-3 {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.1)
       ),
-      url("/img/slide-3.jpg");
+      url(/img/slide-3.jpg);
   }
 }
 
